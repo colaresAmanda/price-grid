@@ -24,9 +24,12 @@
     --white-one: #FCFCFC;
     --green-one: #0ABBB5;
     --green-two: #6ADBD9;
-    --pink-one: #F99997;
+    --pink-one: #9fe644;
     --gray-one: #C2B8AD;
 
+
+    /*  button color*/
+    --button-color: #9bf526;
     /* fonts */
     --body-font: 'Work Sans', sans-serif;
 }
@@ -35,11 +38,17 @@
 /* =============== BASE ====================== */
 body{
     font-family: var(--body-font);
-
+    background-color: rgb(223, 223, 223);
+    
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 /* ================= CONTENT BOX =============== */
 #content{
-    border: 3rem 3rem 3rem 3rem;
+    margin: 2.5rem 2rem 2.5rem 2rem;
+    border-radius: 50px;
     
 }
 
@@ -47,31 +56,38 @@ body{
     font: 500 1.75rem var(--body-font);
 }
 
+.text{
+    font: 300 1.25rem var(--body-font);
+}
+
 /* ========= SECTION 1 ============ */
 #section_1{
     background-color: var(--white-one);
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 1px 5px rgb(207, 207, 207);
+
 }
 
 
 #section_1 h1{
     color: var(--green-one);
     padding-bottom: 2rem;
-    font: 700 3rem var(--body-font);
+    font: 700 2rem var(--body-font);
   
 }
 
 #section_1 h2{
     color: var(--pink-one);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     
 
 }
 
 #section_1 p{
     color: var(--gray-one);
-    padding-bottom: 1rem;
-    font: 300 1.5rem var(--body-font);
+    padding-top: 1.5rem;
+    
 }
 
 /* ========= SECTION 2 ============ */
@@ -80,9 +96,98 @@ body{
 #section_2{
     background-color: var(--green-one);
     color: var(--white-one);
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 4rem 1.5rem 4rem 1.5rem;
+    box-shadow: 3px 1px 5px rgb(207, 207, 207);
+    padding-bottom: 6rem;
+
+    
 }
 
-#section_2 h2{
+
+/*Price*/
+
+#price {
+    display: flex;
+    padding: 1.5rem 0rem 0rem 0rem;
+}
+
+#price h3{
+    font: 500 3.5rem var(--body-font);
     
+}
+
+#price p{
+    color: #94dbd9;
+    font: 300 1.15rem var(--body-font);
+    position: relative;
+    bottom: -1.75rem;
+    left: 1rem;
+}
+
+#section_2 .text{
+    padding: 1rem 0rem 5rem 0rem;
+}
+
+#button {
+    background-color: var(--pink-one);
+    color: var(--white-one);
+    padding: 1rem 4rem 1rem 4rem;
+    border-radius: 5px;
+    box-shadow: 0.25px 0.5px 5px rgb(114, 114, 114);
+    
+}
+
+#button:hover{
+    background-color: var(--button-color);
+   
+}
+
+#section_3{
+    background-color: var(--green-two);
+    color: var(--white-one);
+    padding: 4rem 1.5rem 4rem 1.5rem;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 3px 1px 5px rgb(207, 207, 207);
+
+}
+
+#section_3 h2{
+    padding-bottom: 2.5rem;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    #content{
+        
+        margin: 5rem 15rem 5rem 15rem;
+        border-radius: 50px;
+        
+    }
+    
+    #section_1{
+        padding: 4rem 5rem 4rem 5rem;
+    }
+
+    #section_1 p{
+        padding-top: 0rem;
+    }
+
+    #block_2{
+        display: flex;
+    }
+    #section_2{
+        width: 50%;
+        padding: 4rem 5rem 4rem 5rem;
+        border-radius: 0px 0px 0px 10px;
+    }
+    #section_3{
+        width: 50%;
+        padding: 4rem 5rem 4rem 5rem;
+        border-radius: 0px 0px 10px 0px;
+    }
+    
+
 }
