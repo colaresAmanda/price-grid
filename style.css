@@ -1,0 +1,88 @@
+/*====  RESET ============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+/* =========== VARIABLES =================== */
+:root{
+    /* colors */
+    --white-one: #FCFCFC;
+    --green-one: #0ABBB5;
+    --green-two: #6ADBD9;
+    --pink-one: #F99997;
+    --gray-one: #C2B8AD;
+
+    /* fonts */
+    --body-font: 'Work Sans', sans-serif;
+}
+
+
+/* =============== BASE ====================== */
+body{
+    font-family: var(--body-font);
+
+}
+/* ================= CONTENT BOX =============== */
+#content{
+    margin: 3rem 3rem 3rem 3rem;
+    
+}
+
+.subtitle{
+    font: 500 1.75rem var(--body-font);
+}
+
+/* ========= SECTION 1 ============ */
+#section_1{
+    background-color: var(--white-one);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+#section_1 h1{
+    color: var(--green-one);
+    padding-bottom: 2rem;
+    font: 700 3rem var(--body-font);
+  
+}
+
+#section_1 h2{
+    color: var(--pink-one);
+    padding-bottom: 2rem;
+    
+
+}
+
+#section_1 p{
+    color: var(--gray-one);
+    padding-bottom: 1rem;
+    font: 300 1.5rem var(--body-font);
+}
+
+/* ========= SECTION 2 ============ */
+
+
+#section_2{
+    background-color: var(--green-one);
+    color: var(--white-one);
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+#section_2 h2{
+    
+}
