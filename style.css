@@ -39,7 +39,7 @@ body{
 }
 /* ================= CONTENT BOX =============== */
 #content{
-    margin: 3rem 3rem 3rem 3rem;
+    border: 3rem 3rem 3rem 3rem;
     
 }
 
